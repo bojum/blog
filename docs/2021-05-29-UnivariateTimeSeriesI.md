@@ -5,6 +5,13 @@ date:   2021-05-29 07:41:19 +0700
 categories: jekyll update
 ---
 
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+
 # Univariate Time Series
 
 This article introduces a background of a univariate time series model including how to handle trend and seasonality in theory. A quick hyperparameter selection using ACF and PACF is also provided.
@@ -276,13 +283,6 @@ ax.set_title('Monthly Beer Production')
 ```
 
 
-
-
-    Text(0.5, 1.0, 'Monthly Beer Production')
-
-
-
-
 ![png](../fig/2021-05-29-Univariate Time Series I/output_22_1.png)
 
 
@@ -293,10 +293,6 @@ detrended_beer = beer['Monthly beer production'] - beer['Monthly beer production
 _ = tsplot(detrended_beer[1:], '', lags=30)             
 
 ```
-
-    //anaconda3/lib/python3.7/site-packages/statsmodels/regression/linear_model.py:1358: RuntimeWarning: invalid value encountered in sqrt
-      return rho, np.sqrt(sigmasq)
-
 
 
 ![png](../fig/2021-05-29-Univariate Time Series I/output_23_1.png)
@@ -319,8 +315,3 @@ _ = tsplot(t_beer[13:], 'deseason and detrend', lags=30)
 
 
 Seasonality and trend are removed. But there are still some structures in ACF and PACF. 
-
-
-```python
-
-```

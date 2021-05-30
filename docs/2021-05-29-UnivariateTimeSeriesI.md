@@ -66,7 +66,7 @@ For instance,
 * $\rho_5$ in ACF can be read as: the correlation between any $Y$ in the series and $Y$ is 5 lags away from it is 0.1
 * $\rho_2'$ in PACF can be read as: the correlation between any $Y$ in the series and $Y$ is 2 lags away from it, given $Y$ that is 1 lag away, is -0.3
 
-## Autoregressive Model
+## Autoregressive (AR) Model
 
 An autoregressive model of order 1 or $AR(1)$ models a relationship where the mean adjusted value at time $t$ only depends on the mean adjusted value at time $t-1$
 
@@ -172,7 +172,7 @@ tsplot(x, ar_model = 'AR(2)', lags=30)
     * it drops after lag 1 for AR(1) and after lag 2 for AR(2)
 * Note that the PACF here starts from lag 0. Starting from lag 1 is common.
 
-## Moving Average Model (MA)
+## Moving Average (MA) Model 
 
 A moving average model or MA models a relationship where the mean adjusted value at time $t$ only depends on previous and current white noise:
 
@@ -234,7 +234,7 @@ _ = tsplot(ma1, 'ARMA(1, 1)', lags=30)
 
 For ARMA, both ACF and PACF gradually decrease.
 
-#### The summary of Time Series Processes' characteristics in correlograms
+**The summary of Time Series Processes' characteristics in correlograms**
 
 |  | AR(p) | MA(q) | ARMA(p,q) |
 | :-: | :-: | :-: | :-: |

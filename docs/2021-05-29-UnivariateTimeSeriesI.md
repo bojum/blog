@@ -5,16 +5,16 @@ date:   2021-05-29 07:41:19 +0700
 categories: jekyll update
 ---
 
+# Univariate Time Series
+
+This article introduces a background of a univariate time series model including how to handle trend and seasonality in theory. A quick hyperparameter selection using ACF and PACF is also provided.
+
 ## Table of contents
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
 
-
-# Univariate Time Series
-
-This article introduces a background of a univariate time series model including how to handle trend and seasonality in theory. A quick hyperparameter selection using ACF and PACF is also provided.
 
 ## Autocovariance and Autocorrelation
 
